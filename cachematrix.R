@@ -3,21 +3,19 @@
 ## 1: This function creates a special “matrix” object that can cache its inverse.
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
-i <- NULL
-set <- function (y) {
-  x <<-y
-  i <<- NULL
-}
-get <- function() x
-setinverse <- function(inverse) i <<- inverse
-getinverse <- function() i
-list(set = set,
-     get = get,
-     setinverse = setinverse,
-     getinverse = getinverse)
-}
-
+makeCacheMatrix <- function(x = matrix()){
+  i <- NULL
+  Set <- function (y) { 
+    x <<-y
+    i <<- NULL
+    }
+  get <- function() x
+  setinteverse <- function () i
+  list (set = set, 
+        get = get, 
+        setinversse = setinvesrse, 
+        getinverse = getinverse)
+  }
 
 ## Write a short comment describing this function
 /## 2: This function computes the inverse of the special "matrix" returned by makeCacheMatrix above.
